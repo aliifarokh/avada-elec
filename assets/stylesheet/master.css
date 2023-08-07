@@ -1,0 +1,1127 @@
+.head {
+  width: 100%;
+  height: 130vh;
+}
+.head > * {
+  width: 100%;
+}
+.head > header {
+  height: 11%;
+  background-color: rgb(51, 54, 69);
+}
+.head > header > * {
+  height: 100%;
+}
+.head > header > figure {
+  width: 30%;
+  padding-left: 33px;
+  justify-content: center;
+  align-items: center;
+}
+.head > header > figure > img {
+  height: 73%;
+}
+.head > header > nav {
+  width: 50%;
+}
+.head > header > nav > ul {
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+}
+.head > header > nav > ul > li {
+  height: 100%;
+  min-width: 10px;
+  margin: 0 9px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.head > header > nav > ul > li:hover > a {
+  color: orange;
+}
+.head > header > nav > ul > li:nth-of-type(1) > a {
+  color: orange;
+  background-color: rgb(41, 43, 55);
+}
+.head > header > nav > ul > li:hover::before {
+  left: 0;
+  width: 100%;
+}
+.head > header > nav > ul > li::before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  background-color: rgb(41, 43, 55);
+  left: 50%;
+  top: 0;
+  width: 0;
+  transition: 0.5s;
+}
+.head > header > nav > ul > li > .dropmenu {
+  width: 200%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  background-color: rgb(41, 43, 55);
+}
+.head > header > nav > ul > li > .dropmenu > li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.head > header > nav > ul > li > .dropmenu > li > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0 20px 20px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 13px;
+}
+.head > header > nav > ul > li > .dropmenu > li > a:hover {
+  background-color: orange;
+}
+.head > header > nav > ul > li:hover > .dropmenu {
+  visibility: visible;
+  opacity: 1;
+}
+.head > header > nav > ul > li > a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+}
+.head > header > nav > ul > li > a > i {
+  font-size: 10px;
+  padding-left: 5px;
+}
+.head > header > div {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 85px;
+}
+.head > header > div > a {
+  display: flex;
+  background-color: orange;
+  padding: 9.5px 32.5px;
+  color: white;
+  font-size: 21px;
+  border-radius: 2px;
+}
+.head > .top {
+  height: 89%;
+  background-image: url(../img/slide_06.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 125px 0;
+}
+.head > .top > .icon1 {
+  padding: 20px 0;
+}
+.head > .top > .icon1 > i {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 115px;
+  color: white;
+  font-weight: bold;
+}
+.head > .top h1 {
+  padding: 10px 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 68px;
+  font-weight: lighter;
+}
+.head > .top > .icon2 {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head > .top > .icon2 > div {
+  height: 0;
+  width: 67px;
+  border: 1.5px solid orange;
+}
+.head > .top > .icon2 > i {
+  color: orange;
+  font-size: 22px;
+}
+.head > .top > .paragraph {
+  padding: 14px 0 18px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.head > .top > .paragraph > p {
+  line-height: 38px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  color: white;
+  padding: 5px 0;
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+.head > .top > .link {
+  padding: 18px;
+  justify-content: center;
+}
+.head > .top > .link > a {
+  color: white;
+  font-size: 20px;
+  background-color: orange;
+  width: auto;
+  border-radius: 2px;
+  padding: 15px 35px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.info {
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+}
+.info > div {
+  margin: 30px 0;
+  border-right: 1px solid rgba(128, 128, 128, 0.212);
+  padding: 30px 110px;
+}
+.info > div:nth-of-type(3) {
+  border-right: none;
+}
+.info > div > * {
+  padding: 5px 0;
+}
+.info > div > h3 {
+  color: orange;
+  text-transform: uppercase;
+  font-weight: 70;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+.info > div p {
+  color: rgb(94, 98, 118);
+  display: flex;
+  justify-content: center;
+  font-size: 27px;
+}
+
+.about {
+  height: 165vh;
+  width: 100%;
+  background-image: url(../img/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  align-content: center;
+  justify-content: center;
+}
+.about > * {
+  padding: 30px 0;
+  width: 100%;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about > h2 {
+  color: rgb(51, 54, 69);
+  text-transform: uppercase;
+  font-size: 50px;
+  position: relative;
+  height: 120px;
+  margin-top: 0px;
+}
+.about > h2::after {
+  content: "";
+  position: absolute;
+  left: calc(50% - 100px);
+  bottom: 0%;
+  width: 200px;
+  height: 0;
+  border: 1px solid rgb(94, 98, 118);
+}
+.about > .paragraph2 > p {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  color: rgb(142, 145, 157);
+  -moz-text-align-last: center;
+       text-align-last: center;
+  line-height: 38px;
+}
+.about > .block {
+  align-items: center;
+}
+.about > .block > article {
+  width: 355px;
+  margin: 13px;
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+}
+.about > .block > article > * {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about > .block > article > h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+  color: orange;
+  font-weight: lighter;
+}
+.about > .block > article > p {
+  width: 70%;
+  font-size: 18px;
+  color: rgb(142, 145, 157);
+  line-height: 38px;
+  text-align: center;
+}
+.about > .block > article > a {
+  background-color: orange;
+  color: white;
+  text-transform: capitalize;
+}
+.about > .block > article:hover {
+  cursor: pointer;
+}
+.about > .block > article:nth-of-type(2):hover > div > div > i {
+  font-size: 60px;
+  outline-offset: 30px;
+  outline-color: rgba(255, 166, 0, 0);
+  transition: 2s;
+}
+.about > .block > article:nth-of-type(2) > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about > .block > article:nth-of-type(2) > div > div {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about > .block > article:nth-of-type(2) > div > div > i {
+  font-size: 63px;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  background-color: white;
+  border-radius: 50%;
+  outline: 10px solid rgba(255, 166, 0, 0.801);
+  outline-offset: -5px;
+}
+.about > .block > article:nth-of-type(1), .about > .block > article:nth-of-type(3) {
+  background-color: white;
+  height: 350px;
+}
+.about > .block > article:nth-of-type(1) > h3, .about > .block > article:nth-of-type(3) > h3 {
+  font-size: 30px;
+  text-transform: capitalize;
+  color: rgb(51, 54, 69);
+  font-weight: lighter;
+}
+.about > .block > article:nth-of-type(1):hover > h3, .about > .block > article:nth-of-type(3):hover > h3 {
+  color: orange;
+}
+.about > .block > article:nth-of-type(1) > p, .about > .block > article:nth-of-type(3) > p {
+  width: 70%;
+  font-size: 18px;
+  color: rgb(142, 145, 157);
+  line-height: 38px;
+  text-align: center;
+}
+.about > .block > article:nth-of-type(1) > a, .about > .block > article:nth-of-type(3) > a {
+  background-color: orange;
+  color: white;
+  text-transform: capitalize;
+}
+.about > .block > article:nth-of-type(1):hover > div > div > i:nth-of-type(1), .about > .block > article:nth-of-type(3):hover > div > div > i:nth-of-type(1) {
+  color: orange;
+  left: 0;
+  transition: 0.5s;
+}
+.about > .block > article:nth-of-type(1):hover > div > div > i:nth-of-type(2), .about > .block > article:nth-of-type(3):hover > div > div > i:nth-of-type(2) {
+  color: orange;
+  left: 60px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.about > .block > article:nth-of-type(1) > div, .about > .block > article:nth-of-type(3) > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about > .block > article:nth-of-type(1) > div > div, .about > .block > article:nth-of-type(3) > div > div {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.about > .block > article:nth-of-type(1) > div > div > i, .about > .block > article:nth-of-type(3) > div > div > i {
+  font-size: 45px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: rgb(51, 54, 69);
+}
+.about > .block > article:nth-of-type(1) > div > div > i:nth-of-type(1), .about > .block > article:nth-of-type(3) > div > div > i:nth-of-type(1) {
+  left: -60px;
+}
+.about > .block > article:nth-of-type(1) > div > div > i:nth-of-type(2), .about > .block > article:nth-of-type(3) > div > div > i:nth-of-type(2) {
+  left: 0;
+}
+.about > .block > article:nth-of-type(2) {
+  background-color: rgb(61, 54, 69);
+  width: 400px;
+  height: 420px;
+}
+.about .request {
+  width: 100%;
+  height: 150px;
+  margin-top: 120px;
+  background-color: orange;
+}
+.about .request > h4 {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: rgb(51, 54, 43);
+  font-size: 25px;
+  font-weight: lighter;
+  justify-content: center;
+}
+.about .request > div {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.about .request > div > a {
+  background-color: rgb(51, 54, 69);
+  padding: 15px 90px;
+  font-size: 18px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 2px;
+}
+.about .request > div > a:hover {
+  color: rgb(51, 54, 69);
+  background-color: white;
+}
+
+.services {
+  width: 100%;
+  height: 226vh;
+  background-color: rgb(41, 43, 55);
+  padding: 90px 0;
+}
+.services > * {
+  width: 100%;
+}
+.services h2 {
+  height: 10%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.services h2::after {
+  content: "";
+  width: 15%;
+  border: 1px solid rgb(94, 98, 118);
+  position: absolute;
+  bottom: 5%;
+}
+.services .paragraph3 {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services .paragraph3 > p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 55%;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(159, 160, 171);
+  -moz-text-align-last: center;
+       text-align-last: center;
+  font-weight: lighter;
+}
+.services div {
+  height: 70%;
+  justify-content: center;
+}
+.services div > article {
+  width: 400px;
+  height: 450px;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.services div > article:nth-of-type(1) > .icon3 > div > i {
+  rotate: -45deg;
+}
+.services div > article > * {
+  width: 100%;
+}
+.services div > article > .icon3 {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services div > article > .icon3 > div {
+  width: 100px;
+  border: 1px solid rgb(188, 130, 21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.services div > article > .icon3 > div > i {
+  color: white;
+  font-size: 35px;
+}
+.services div > article > h3 {
+  height: 50px;
+  font-size: 29px;
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  font-weight: lighter;
+  align-items: center;
+}
+.services div > article > p {
+  height: 110px;
+  color: rgb(159, 160, 171);
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 29px;
+  font-weight: lighter;
+  padding: 0 20px;
+  -moz-text-align-last: center;
+       text-align-last: center;
+}
+.services div > article > .link2 {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.services div > article > .link2 > a {
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  color: white;
+  background-color: orange;
+  border-radius: 2px;
+}
+
+.work {
+  width: 100%;
+  height: 270vh;
+  background-image: url(../img/work-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+.work > * {
+  width: 100%;
+  margin: 10px 0;
+}
+.work > h2 {
+  height: 8%;
+  color: rgb(51, 54, 69);
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.work > h2::after {
+  content: "";
+  width: 15%;
+  border: 1px solid rgb(94, 98, 118);
+  position: absolute;
+  bottom: 0%;
+}
+.work > .paragraph4 {
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.work > .paragraph4 > p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 55%;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(159, 160, 171);
+  -moz-text-align-last: center;
+       text-align-last: center;
+  font-weight: lighter;
+}
+.work > .link3 {
+  height: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work > .link3 > a {
+  font-weight: lighter;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  color: white;
+  background-color: orange;
+  border-radius: 2px;
+}
+.work .pics {
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 289px);
+  grid-template-rows: repeat(4, 245px);
+  gap: 16px;
+  padding: 90px 80px;
+}
+.work .pics > figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.work .pics > figure:hover > figcaption {
+  opacity: 1;
+  cursor: pointer;
+}
+.work .pics > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.work .pics > figure > figcaption {
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 53, 53, 0.94);
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-content: center;
+  opacity: 0;
+}
+.work .pics > figure > figcaption > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+.work .pics > figure > figcaption > i {
+  background-color: rgba(255, 255, 255, 0.788);
+  border-radius: 50%;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+}
+.work .pics > figure > figcaption > p {
+  text-transform: capitalize;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.788);
+}
+.work .pics > figure:nth-of-type(1) {
+  grid-area: 1/1/span 2/span 1;
+}
+.work .pics > figure:nth-of-type(2) {
+  grid-area: 1/2/span 1/span 2;
+}
+.work .pics > figure:nth-of-type(3) {
+  grid-area: 2/2/span 1/span 2;
+}
+.work .pics > figure:nth-of-type(4) {
+  grid-area: 1/4/span 2/span 1;
+}
+.work .pics > figure:nth-of-type(5) {
+  grid-area: 3/1/span 2/span 2;
+}
+.work .pics > figure:nth-of-type(6) {
+  grid-area: 3/3/span 2/span 2;
+}
+
+.blog {
+  width: 100%;
+  height: 210vh;
+  background-image: url(../img/news.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-content: start;
+  justify-content: center;
+  background-position: fixed;
+}
+.blog > * {
+  width: 100%;
+  margin: 10px 0;
+}
+.blog > h2 {
+  height: 8%;
+  color: rgb(51, 54, 69);
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.blog > h2::after {
+  content: "";
+  width: 15%;
+  border: 1px solid rgb(94, 98, 118);
+  position: absolute;
+  bottom: 0%;
+}
+.blog > .paragraph5 {
+  height: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog > .paragraph5 > p {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 55%;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(159, 160, 171);
+  -moz-text-align-last: center;
+       text-align-last: center;
+  font-weight: lighter;
+}
+.blog > .box {
+  height: 80%;
+  padding: 90px 80px;
+  justify-content: center;
+}
+.blog > .box > .box1 {
+  margin: 0 10px;
+  width: 375px;
+  height: 650px;
+  justify-content: center;
+  align-content: start;
+  background-color: white;
+}
+.blog > .box > .box1 > * {
+  width: 100%;
+}
+.blog > .box > .box1 > figure {
+  height: 35%;
+  position: relative;
+}
+.blog > .box > .box1 > figure > img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog > .box > .box1 > figure > figcaption {
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 53, 53, 0.94);
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-content: center;
+  opacity: 0;
+}
+.blog > .box > .box1 > figure > figcaption:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.blog > .box > .box1 > figure > figcaption > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+}
+.blog > .box > .box1 > figure > figcaption > a > i {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.788);
+  border-radius: 50%;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+}
+.blog > .box > .box1 > figure > figcaption > a > i:hover {
+  background-color: rgb(255, 255, 255);
+}
+.blog > .box > .box1 > figure > figcaption > p {
+  text-transform: capitalize;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.788);
+}
+.blog > .box > .box1 > div {
+  height: 21%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+.blog > .box > .box1 > div::after {
+  content: "";
+  display: flex;
+  width: 90%;
+  border: 0.3px solid rgba(159, 160, 172, 0.329);
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
+}
+.blog > .box > .box1 > div > * {
+  width: 100%;
+  text-transform: capitalize;
+  color: rgb(159, 160, 172);
+  font-weight: lighter;
+  padding: 5px 25px;
+}
+.blog > .box > .box1 > div > a {
+  font-size: 25px;
+  transition: 0.4s;
+}
+.blog > .box > .box1 > div > a:hover {
+  color: orange;
+}
+.blog > .box > .box1 > div > p {
+  font-size: 15px;
+}
+.blog > .box > .box1 > p {
+  color: rgb(159, 160, 172);
+  font-size: 19px;
+  line-height: 36px;
+  padding-left: 25px;
+}
+.blog .link4 {
+  width: 1165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog .link4 > a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(51, 54, 69);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 20px 0;
+  background-color: orange;
+}
+.blog .link4 > a:hover {
+  background-color: rgba(255, 166, 0, 0.829);
+}
+
+.free {
+  width: 100%;
+  height: 360px;
+  background-color: rgb(41, 43, 55);
+  padding: 0 22px;
+}
+.free > * {
+  height: 100%;
+  margin: 0 22px;
+}
+.free > div {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.free > div > * {
+  width: 100%;
+  color: white;
+  padding: 25px 30px;
+}
+.free > div > h6 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  position: relative;
+}
+.free > div > h6::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  left: 28px;
+  bottom: 10%;
+  background-color: white;
+  height: 1px;
+}
+.free > div > p {
+  font-size: 17px;
+  font-weight: lighter;
+  line-height: 30px;
+}
+.free > form {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.free > form > input {
+  width: 316px;
+  height: 40px;
+  margin: 20px;
+  border: none;
+  outline: none;
+  padding: 15px;
+}
+.free > form > input:nth-of-type(4) {
+  background-color: orange;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 2px;
+}
+
+.info2 {
+  width: 100%;
+  justify-content: center;
+  background-color: rgb(51, 54, 69);
+}
+.info2 > div {
+  margin: 30px 0;
+  padding: 30px 110px;
+}
+.info2 > div:nth-of-type(3) {
+  border-right: none;
+}
+.info2 > div > * {
+  padding: 5px 0;
+}
+.info2 > div > h3 {
+  color: orange;
+  text-transform: uppercase;
+  font-weight: 70;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+}
+.info2 > div p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 27px;
+}
+
+.foot {
+  width: 100%;
+  height: 580px;
+}
+.foot > * {
+  width: 100%;
+}
+.foot > .info3 {
+  height: 80%;
+  background-color: rgb(41, 43, 55);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.foot > .info3 > * {
+  height: 320px;
+}
+.foot > .info3 > div {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-content: start;
+  flex-wrap: wrap;
+}
+.foot > .info3 > div > * {
+  width: 100%;
+}
+.foot > .info3 > div > ul {
+  height: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+}
+.foot > .info3 > div > ul > li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot > .info3 > div > ul > li > a {
+  text-transform: capitalize;
+  font-size: 20px;
+  color: rgb(152, 156, 141);
+  transition: 0.4s;
+}
+.foot > .info3 > div > ul > li > a:hover {
+  color: orange;
+}
+.foot > .info3 > div > h6 {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 23px;
+  font-weight: lighter;
+}
+.foot > .info3 > div > p {
+  height: 55%;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  font-weight: lighter;
+  color: rgb(152, 156, 141);
+  text-align: center;
+}
+.foot > .info3 > div > .icon4 {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+}
+.foot > .info3 > div > .icon4 > a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(152, 156, 141);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  transition: 0.4s;
+}
+.foot > .info3 > div > .icon4 > a:hover {
+  background-color: rgba(152, 156, 141, 0.363);
+}
+.foot > .info3 > div > .icon4 > a > i {
+  width: 100%;
+  height: 100%;
+  color: rgb(41, 43, 55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.foot > .info3 > figure {
+  width: 327px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: start;
+}
+.foot > .info3 > figure > * {
+  width: 100%;
+}
+.foot > .info3 > figure > figcaption {
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 23px;
+  font-weight: lighter;
+}
+.foot > .info3 > figure > img {
+  margin-top: 8%;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.foot > .end {
+  height: 20%;
+  background-color: rgb(51, 54, 69);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot > .end > p {
+  text-align: center;
+  color: rgb(152, 156, 141);
+  font-size: 14px;
+}
+.foot > .end > p > a {
+  color: orange;
+}/*# sourceMappingURL=master.css.map */
